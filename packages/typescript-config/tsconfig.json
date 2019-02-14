@@ -11,4 +11,5 @@
     "noUnusedParameters": true,
     "sourceMap": true,
     "strict": true
+  }
 }

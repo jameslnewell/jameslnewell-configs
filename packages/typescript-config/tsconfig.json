@@ -1,9 +1,15 @@
 
 {
   "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
     "jsx": "react",
     "lib": ["dom", "esnext"],
     "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true, 
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "sourceMap": true,
     "strict": true
-  }
 }

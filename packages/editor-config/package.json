@@ -1,0 +1,10 @@
+{
+  "name": "@jameslnewell/editor-config",
+  "version": "1.0.0",
+  "files": [".editorconfig", "postinstall.js"],
+  "repository": "jameslnewell/configs",
+  "scripts": {
+    "postinstall": "node ./postinstall.js"
+  },
+  "license": "MIT"
+}

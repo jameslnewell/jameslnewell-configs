@@ -1,5 +1,11 @@
 {
   "name": "@jameslnewell/tslint-config",
   "version": "0.1.0",
+  "peerDependencies": {
+    "tslint": "^5.12.1"
+  },
+  "dependencies": {
+    "tslint-config-prettier": "^1.18.0"
+  },
   "license": "MIT"
 }

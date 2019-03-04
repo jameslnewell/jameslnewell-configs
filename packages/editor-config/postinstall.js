@@ -1,5 +1,5 @@
+/* eslint-disable @typescript-eslint/no-var-requires,no-console */
 const fs = require('fs');
-const path = require('path');
 
 const sourcePath = `${__dirname}/.editorconfig`;
 const destinationPath = `${process.cwd()}/.editorconfig`;

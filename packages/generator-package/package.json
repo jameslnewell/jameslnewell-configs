@@ -1,0 +1,18 @@
+{
+  "name": "@jameslnewell/generator-package",
+  "version": "0.1.0",
+  "description": "Generate a new npm package.",
+  "repository": "jameslnewell/configs",
+  "author": {
+    "name": "James Newell",
+    "email": "james@digitaledgeit.com.au"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "dependencies": {
+    "yeoman-generator": "^2.0.1"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "@jameslnewell/jest-preset-test",
+  "version": "1.0.0",
+  "dependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^24.1.0",
+    "jest-config": "^24.1.0"
+  },
+  "license": "MIT"
+}

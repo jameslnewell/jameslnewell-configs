@@ -2,14 +2,19 @@ module.exports = {
   "extends": ["tslint:recommended", "tslint-config-prettier"],
   "rules": {
     "interface-name": false,
-    "ordered-imports": [false],
-    "object-literal-sort-keys": [false],
     "quotemark": [false],
+    
+    // stupid
+    "member-ordering": false,
+    "object-literal-sort-keys": [false],
+    "ordered-imports": [false],
 
+    // nitpicky
+    "comment-format": false,
+
+    // disable .only() in tests
     "ban": [
       true,
-
-      // disable .only() in tests
       { "name": ["fdescribe"], "message": "Don't focus tests!" },
       { "name": ["describe", "only"], "message": "Don't focus tests!" },
       { "name": ["describe", "skip"], "message": "Don't focus tests!" },

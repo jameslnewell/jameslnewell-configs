@@ -1,6 +1,6 @@
 {
   "name": "@jameslnewell/editor-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "files": [".editorconfig", "postinstall.js"],
   "repository": "jameslnewell/configs",
   "scripts": {

@@ -8,13 +8,14 @@
   "dependencies": {
     "eslint": "^5.15.0",
     "husky": "^1.1.4",
+    "lerna": "^3.13.1",
     "lint-staged": "^8.0.4",
     "prettier": "^1.16.4",
     "publish-if-not-published": "^1.0.2"
   },
   "scripts": {
     "lint": "eslint --ext .js,.ts .",
-    "publish": "yarn workspaces exec publish-if-not-published -- --access=public"
+    "publish": "lerna exec publish-if-not-published -- --access=public"
   },
   "husky": {
     "hooks": {

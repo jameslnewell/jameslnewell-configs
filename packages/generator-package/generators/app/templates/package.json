@@ -1,7 +1,10 @@
 {
-  "name": "example",
+  "name": "generated",
   "version": "1.0.0",
-  "private": true,
+  "description": "A generated package.",
+  "files": ["lib"],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "devDependencies": {
     "@jameslnewell/babel-preset": "^1.0.0",
     "@jameslnewell/editor-config": "^1.0.0",
@@ -14,10 +17,28 @@
     "@babel/core": "^7.3.4",
     "@types/jest": "^24.0.9",
     "jest": "^24.1.0",
-    "typescript": "^3.3.3333"
+    "typescript": "^3.3.3333",
+    "eslint": "^5.15.0",
+    "husky": "^1.1.4",
+    "lerna": "^3.13.1",
+    "lint-staged": "^8.0.4",
+    "prettier": "^1.16.4"
   },
   "scripts": {
     "lint": "eslint --ext .ts,.js src",
+    "build": "tsc",
     "test": "jest"    
-  }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{md,json,js,jsx,ts,tsx}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "license": "MIT"
 }

@@ -17,14 +17,10 @@ yarn add --dev @jameslnewell/typescript-config
   "extends": "./node_modules/@jameslnewell/typescript-config/tsconfig.json",
   "compilerOptions": {
     "declaration": true,
-    "outDir": "dist",
-    "target": "esnext"
+    "outDir": "lib",
+    "target": "commonjs"
 
   },
-  "include": [
-    "src/**/*.ts", "src/**/*.ts",
-    "src/**/*.test.ts", "src/**/*.test.tsx",
-    "test/**/*.test.ts", "test/**/*.test.tsx"
-  ]
+  "include": ["src"]
 }
 ```

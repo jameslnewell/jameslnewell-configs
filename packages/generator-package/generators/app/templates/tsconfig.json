@@ -1,8 +1,9 @@
 {
-  "extends": "./node_modules/@jameslnewell/typescript-config/tsconfig.js",
+  "extends": "./node_modules/@jameslnewell/typescript-config/tsconfig.json",
   "compilerOptions": {
-    "declaration": true,
-    "outDir": "lib"
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "noEmit": true
   },
   "include": ["src"]
 }

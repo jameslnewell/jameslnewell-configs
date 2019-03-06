@@ -1,5 +1,8 @@
 {
   "extends": "@jameslnewell/eslint-config",
+  "env": {
+    "jest": true
+  },
   "parserOptions": {
     "project": "./tsconfig.json"
   }

@@ -5,7 +5,7 @@ A test preset for my personal projects that use `jest`.
 ## Installation
 
 ```
-yarn add --dev @jameslnewell/jest-preset-test
+yarn add --dev @babel/core @jameslnewell/jest-preset-test
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ yarn add --dev @jameslnewell/jest-preset-test
 ```
 {
   projects: [
-    displayName: 'type',
+    displayName: 'test',
     preset: '@jameslnewell/jest-preset-test'
   ]
 }

@@ -1,9 +1,9 @@
 {
   "name": "@jameslnewell/jest-preset-type",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
-    "jest-config": "^24.1.0",
-    "jest-runner-tsc": "^1.4.0"
+    "jest-config": "^24.8.0",
+    "jest-runner-tsc": "^1.5.1"
   },
   "license": "MIT"
 }

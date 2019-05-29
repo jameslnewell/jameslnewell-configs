@@ -1,8 +1,8 @@
 {
   "name": "@jameslnewell/jest-preset-lint",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
-    "jest-config": "^24.1.0",
+    "jest-config": "^24.8.0",
     "jest-runner-eslint": "^0.7.3"
   },
   "license": "MIT"

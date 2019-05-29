@@ -6,12 +6,15 @@
     "packages/*"
   ],
   "dependencies": {
+    "@babel/core": "^7.4.5",
     "eslint": "^5.15.0",
     "husky": "^1.1.4",
+    "jest": "^24.8.0",
     "lerna": "^3.13.1",
     "lint-staged": "^8.0.4",
     "prettier": "^1.16.4",
-    "publish-if-not-published": "^1.0.2"
+    "publish-if-not-published": "^1.0.2",
+    "typescript": "^3.4.5"
   },
   "scripts": {
     "lint": "eslint --ext .js,.ts .",

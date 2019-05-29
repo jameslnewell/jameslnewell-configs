@@ -10,10 +10,10 @@ yarn add --dev @jameslnewell/babel-preset
 
 ## Usage
 
-`.babelrc`
+`.babelrc.js`
 
-```
-{
-  "presets": ["@jameslnewell/babel-preset"]
-}
+```js
+module.exports = {
+  presets: [require("@jameslnewell/babel-preset")]
+};
 ```

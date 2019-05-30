@@ -17,12 +17,16 @@ module.exports = {
     "prettier/react",
     "prettier/@typescript-eslint"
   ],
+  settings: {
+    react: {
+      version: "detect"
+    }
+  },
   rules: {
     // note you must disable the base rule as it can report incorrect errors
     // @see https://github.com/bradzacher/eslint-plugin-typescript/blob/master/docs/rules/no-unused-vars.md#options
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": ["error"],
-
     "@typescript-eslint/explicit-function-return-type": [
       "error",
       {
@@ -30,5 +34,13 @@ module.exports = {
         allowTypedFunctionExpressions: true
       }
     ]
-  }
+  },
+  overrides: [
+    {
+      files: ["**/*.tsx"],
+      rules: {
+        "react/prop-types": "off"
+      }
+    }
+  ]
 };

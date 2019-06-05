@@ -1,6 +1,8 @@
 {
   "name": "@jameslnewell/typescript-config",
-  "version": "2.0.2",
-  "files": ["tsconfig.json"],
+  "version": "3.0.0",
+  "files": [
+    "tsconfig.json"
+  ],
   "license": "MIT"
 }

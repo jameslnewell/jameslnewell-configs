@@ -10,13 +10,13 @@ yarn add --dev @jameslnewell/eslint-config
 
 ## Usage
 
-`.eslintrc.json`
+`.eslintrc.js`
 
-```json
-{
-  "extends": "@jameslnewell/eslint-config",
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  }
-}
+```js
+module.exports = {
+  extends: '@jameslnewell/eslint-config',
+  parserOptions: {
+    project: './tsconfig.json',
+  },
+};
 ```

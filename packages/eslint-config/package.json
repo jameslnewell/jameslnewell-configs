@@ -1,12 +1,12 @@
 {
   "name": "@jameslnewell/eslint-config",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "files": [
     "index.js",
     "react.js"
   ],
   "peerDependencies": {
-    "eslint": "^5.16.0"
+    "eslint": "^6.0.1"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^1.11.0",

@@ -16,7 +16,7 @@ yarn add --dev @jameslnewell/jest-preset-lint
 module.exports = {
   projects: [
     {
-      displayName: 'type',
+      displayName: 'lint',
       preset: '@jameslnewell/jest-preset-lint'
     }
   ]

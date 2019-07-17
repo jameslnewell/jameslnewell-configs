@@ -1,4 +1,6 @@
+const {defaults} = require('ts-jest/presets');
+
 module.exports = {
-  preset: 'ts-jest',
-  testMatch: ['<rootDir>/(src|test)/**/*.test.ts?(x)'],
+  ...defaults,
+  testMatch: ['**/(src|test)/**/*.test.ts?(x)'],
 };

@@ -1,6 +1,6 @@
 {
   "name": "@jameslnewell/jest-preset-type",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "dependencies": {
     "jest-config": "^24.8.0",
     "jest-runner-tsc": "^1.5.1"

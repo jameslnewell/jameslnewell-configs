@@ -6,18 +6,18 @@
     "packages/*"
   ],
   "dependencies": {
-    "@babel/core": "^7.4.5",
-    "eslint": "^5.15.0",
-    "husky": "^1.1.4",
-    "jest": "^24.8.0",
-    "lerna": "^3.13.1",
-    "lint-staged": "^8.0.4",
-    "prettier": "^1.16.4",
+    "@babel/core": "^7.5.5",
+    "eslint": "^6.2.2",
+    "husky": "^3.0.4",
+    "jest": "^24.9.0",
+    "lerna": "^3.16.4",
+    "lint-staged": "^9.2.5",
+    "prettier": "^1.18.2",
     "publish-if-not-published": "^1.0.2",
-    "typescript": "^3.4.5"
+    "typescript": "^3.6.2"
   },
   "scripts": {
-    "lint": "eslint --ext .js,.ts .",
+    "lint": "eslint --ext .ts .",
     "publish": "lerna exec publish-if-not-published -- --access=public"
   },
   "husky": {

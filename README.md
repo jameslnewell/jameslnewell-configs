@@ -1,9 +1,9 @@
 # @jameslnewell/configs
 
-Configuration packages for managing my private repositories.
+Sharable configs for managing my personal repositories.
 
-## Publishing
+## Installation
 
 ```
-npm run publish --otp=XXXXXX
+yarn
 ```

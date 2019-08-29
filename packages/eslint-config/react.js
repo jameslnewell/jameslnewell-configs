@@ -1,23 +1,23 @@
 module.exports = {
-  extends: ['./index.js', 'plugin:react/recommended', 'prettier/react'],
-  plugins: ['react'],
+  extends: ["./index.js", "plugin:react/recommended"],
+  plugins: ["react"],
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
-    },
+      jsx: true
+    }
   },
   settings: {
     react: {
-      version: 'detect',
-    },
+      version: "detect"
+    }
   },
   overrides: [
     {
-      files: ['**/*.tsx'],
+      files: ["**/*.tsx"],
       rules: {
         // we've got types so we don't need prop-types
-        'react/prop-types': 'off',
-      },
-    },
-  ],
+        "react/prop-types": "off"
+      }
+    }
+  ]
 };

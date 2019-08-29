@@ -1,37 +1,34 @@
 module.exports = {
-  parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'prettier'],
+  parser: "@typescript-eslint/parser",
+  plugins: ["@typescript-eslint"],
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: 'module',
+    sourceType: "module"
   },
   extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
-    'prettier',
-    'prettier/@typescript-eslint',
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   rules: {
     // note you must disable the base rule as it can report incorrect errors
     // @see https://github.com/bradzacher/eslint-plugin-typescript/blob/master/docs/rules/no-unused-vars.md#options
-    'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': ['error'],
-    '@typescript-eslint/explicit-function-return-type': [
-      'error',
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
       {
         allowExpressions: true,
-        allowTypedFunctionExpressions: true,
-      },
-    ],
+        allowTypedFunctionExpressions: true
+      }
+    ]
   },
   overrides: [
     {
-      files: ['**/*.test.ts', '**/*.test.tsx'],
+      files: ["**/*.test.ts", "**/*.test.tsx"],
       env: {
-        jest: true,
-      },
-    },
-  ],
+        jest: true
+      }
+    }
+  ]
 };

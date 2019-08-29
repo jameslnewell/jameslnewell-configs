@@ -1,6 +1,6 @@
 {
   "name": "@jameslnewell/eslint-config",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "files": [
     "index.js",
     "react.js"
@@ -11,8 +11,6 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^1.11.0",
     "@typescript-eslint/parser": "^1.11.0",
-    "eslint-config-prettier": "^5.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.2"
   },
   "license": "MIT"

@@ -6,7 +6,9 @@ module.exports = {
   },
   plugins: ["react", "react-hooks"],
   settings: {
-    react: {}
+    react: {
+      version: "detect"
+    }
   },
   extends: ["plugin:react/recommended"],
   rules: {

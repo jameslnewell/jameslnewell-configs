@@ -34,3 +34,13 @@ Add a script to your `package.json`:
   }
 }
 ```
+
+## Configs
+
+### @jameslnewell/eslint-config
+
+Sans-react.
+
+### @jameslnewell/eslint-config/react
+
+React.

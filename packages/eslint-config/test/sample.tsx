@@ -5,7 +5,7 @@ export const Counter: FC = () => {
   return (
     <>
       The button has been clicked {count} times!
-      <button onClick={() => setCount(state => state + 1)}>Click me!</button>
+      <span onClick={() => setCount(state => state + 1)}>Click me!</span>
     </>
   );
 };

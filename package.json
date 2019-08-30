@@ -17,7 +17,7 @@
     "typescript": "^3.6.2"
   },
   "scripts": {
-    "lint": "eslint --ext .ts .",
+    "lint": "eslint --ext .ts,.js,.tsx,.tsx .",
     "publish": "lerna exec publish-if-not-published -- --access=public"
   },
   "husky": {

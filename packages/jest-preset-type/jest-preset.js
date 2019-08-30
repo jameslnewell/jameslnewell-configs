@@ -1,8 +1,7 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const {defaults} = require('jest-config');
+const { defaults } = require("jest-config");
 
 module.exports = {
-  runner: 'jest-runner-tsc',
-  testMatch: ['<rootDir>/(src|test)/**/*.ts?(x)'],
+  runner: "jest-runner-tsc",
+  testMatch: ["<rootDir>/(src|test)/**/*.ts?(x)"],
   moduleFileExtensions: [...defaults.moduleFileExtensions, "ts", "tsx"]
 };

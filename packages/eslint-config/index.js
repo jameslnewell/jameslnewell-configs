@@ -1,31 +1,26 @@
+const javascript = require("./partial/javascript");
+const typescript = require("./partial/typescript");
+
 module.exports = {
-  parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint"],
-  parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: "module"
-  },
-  extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended"
-  ],
-  rules: {
-    // note you must disable the base rule as it can report incorrect errors
-    // @see https://github.com/bradzacher/eslint-plugin-typescript/blob/master/docs/rules/no-unused-vars.md#options
-    "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": ["error"],
-    "@typescript-eslint/explicit-function-return-type": [
-      "error",
-      {
-        allowExpressions: true,
-        allowTypedFunctionExpressions: true
-      }
-    ]
-  },
   overrides: [
     {
-      files: ["**/*.test.ts", "**/*.test.tsx"],
+      ...javascript,
+      files: ["*.js"]
+    },
+    {
+      ...javascript,
+      files: ["*.test.js"],
+      env: {
+        jest: true
+      }
+    },
+    {
+      ...typescript,
+      files: ["*.ts"]
+    },
+    {
+      ...typescript,
+      files: ["*.test.ts"],
       env: {
         jest: true
       }

@@ -1,6 +1,9 @@
 const { configs } = require("@typescript-eslint/eslint-plugin");
 
 module.exports = {
+  env: {
+    es6: true
+  },
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {}

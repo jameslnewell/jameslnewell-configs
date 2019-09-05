@@ -2,7 +2,7 @@
 const {defaults} = require('jest-config');
 
 module.exports = {
-  runner: 'jest-runner-tsc',
-  testMatch: ['**/(src|test)/**/*.ts?(x)'],
+  runner: require.resolve('jest-runner-tsc'),
+  testMatch: ['<rootDir>/(src|test)/**/*.ts?(x)'],
   moduleFileExtensions: [...defaults.moduleFileExtensions, 'ts', 'tsx'],
 };

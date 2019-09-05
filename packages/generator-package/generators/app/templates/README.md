@@ -1,15 +1,15 @@
-# generated
+# <%= name %>
 
-A generated package.
+<%= description %>
 
 ## Installation
 
 ```bash
-yarn add example
+yarn add <%= name %>
 ```
 
 ## Usage
 
 ```js
-import * as example from 'example';
+import {sum} from '<%= name %>';
 ```

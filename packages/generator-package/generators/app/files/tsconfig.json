@@ -1,9 +1,7 @@
 {
   "extends": "./node_modules/@jameslnewell/typescript-config/tsconfig.json",
   "compilerOptions": {
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "noEmit": true
+    "lib": ["esnext"]
   },
-  "include": ["src"]
+  "include": ["src", "test", "typings"]
 }

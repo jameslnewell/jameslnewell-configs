@@ -3,5 +3,5 @@
     "node": true,
     "jest": true
   },
-  "extends": ["@jameslnewell/eslint-config"]
+  "extends": ["@jameslnewell/eslint-config/react"]
 }

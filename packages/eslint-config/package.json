@@ -1,6 +1,6 @@
 {
   "name": "@jameslnewell/eslint-config",
-  "version": "0.13.1",
+  "version": "0.13.2",
   "files": [
     "index.js",
     "react.js",
@@ -13,6 +13,7 @@
     "@typescript-eslint/eslint-plugin": "^2.3.3",
     "@typescript-eslint/parser": "^2.3.3",
     "eslint-config-prettier": "^6.4.0",
+    "eslint-import-resolver-typescript": "^1.1.1",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.16.0",

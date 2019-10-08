@@ -38,4 +38,9 @@ module.exports = {
       },
     ],
   },
+  settings: {
+    'import/resolver': {
+      [require.resolve('eslint-import-resolver-typescript')]: {},
+    },
+  },
 };

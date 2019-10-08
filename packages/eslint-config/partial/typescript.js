@@ -14,9 +14,9 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'prettier',
     'prettier/@typescript-eslint',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:import/typescript',
+    // 'plugin:import/errors',
+    // 'plugin:import/warnings',
+    // 'plugin:import/typescript',
   ],
   rules: {
     // manually apply "plugin:@typescript-eslint/eslint-recommended" since overrides inside overrides are
@@ -38,9 +38,9 @@ module.exports = {
       },
     ],
   },
-  settings: {
-    'import/resolver': {
-      [require.resolve('eslint-import-resolver-typescript')]: {},
-    },
-  },
+  // settings: {
+  //   'import/resolver': {
+  //     [require.resolve('eslint-import-resolver-typescript')]: {},
+  //   },
+  // },
 };

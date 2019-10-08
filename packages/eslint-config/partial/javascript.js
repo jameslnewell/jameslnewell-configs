@@ -1,12 +1,17 @@
 module.exports = {
   env: {
-    es6: true
+    es6: true,
   },
   parserOptions: {
     ecmaVersion: 2019,
     ecmaFeatures: {},
-    sourceType: "module"
+    sourceType: 'module',
   },
   plugins: [],
-  extends: ["eslint:recommended"]
+  extends: [
+    'eslint:recommended',
+    'prettier',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+  ],
 };

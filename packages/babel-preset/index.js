@@ -2,13 +2,10 @@ module.exports = (api, opts = {}) => ({
   presets: [
     [
       require('@babel/preset-env'),
-      // {
-      //   "modules": false,
-      //   "spec": true,
-      //   "forceAllTransforms": true,
-      //   "useBuiltIns": "usage",
-      //   "corejs": 3
-      // },
+      {
+        modules: opts.modules,
+        targets: opts.targets,
+      },
     ],
     require('@babel/preset-react'),
     require('@babel/preset-typescript'),
@@ -17,4 +14,17 @@ module.exports = (api, opts = {}) => ({
     require('@babel/plugin-proposal-class-properties'),
     require('@babel/plugin-proposal-object-rest-spread'),
   ],
+  env: {
+    test: {
+      // make jest happy
+      presets: [
+        [
+          require('@babel/preset-env'),
+          {
+            targets: {node: 'current'},
+          },
+        ],
+      ],
+    },
+  },
 });

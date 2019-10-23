@@ -1,9 +1,12 @@
 {
   "name": "@jameslnewell/jest-preset-test",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "repository": "jameslnewell/configs",
   "dependencies": {
-    "ts-jest": "^24.0.2"
+    "babel-jest": "^24.9.0"
+  },
+  "peerDependencies": {
+    "jest": "^24.9.0"
   },
   "license": "MIT"
 }

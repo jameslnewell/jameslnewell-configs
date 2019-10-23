@@ -1,9 +1,7 @@
-const {defaults} = require('ts-jest/presets');
-
 module.exports = {
-  ...defaults,
-  testMatch: ['<rootDir>/(src|test)/**/*.test.ts?(x)'],
+  testMatch: ['<rootDir>/(src|test)/**/*.test?(s).ts?(x)'],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   transform: {
-    '^.+\\.tsx?$': require.resolve('ts-jest'),
+    '^.+\\.(js|jsx|ts|tsx)$': require.resolve('babel-jest'),
   },
 };

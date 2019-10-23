@@ -20,3 +20,5 @@ yarn add --dev @babel/core @jameslnewell/jest-preset-test
   ]
 }
 ```
+
+> Requires a `.babelrc`. See `@jameslnewell/babel-preset`.

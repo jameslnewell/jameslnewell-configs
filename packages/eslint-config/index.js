@@ -1,29 +1,29 @@
-const javascript = require("./partial/javascript");
-const typescript = require("./partial/typescript");
+const javascript = require('./partial/javascript');
+const typescript = require('./partial/typescript');
 
 module.exports = {
   overrides: [
     {
       ...javascript,
-      files: ["*.js"]
+      files: ['*.js'],
     },
     {
       ...javascript,
-      files: ["*.test.js"],
+      files: ['*.test.js'],
       env: {
-        jest: true
-      }
+        jest: true,
+      },
     },
     {
       ...typescript,
-      files: ["*.ts"]
+      files: ['*.ts', '*.tsx'],
     },
     {
       ...typescript,
-      files: ["*.test.ts"],
+      files: ['*.test.ts', '*.test.tsx'],
       env: {
-        jest: true
-      }
-    }
-  ]
+        jest: true,
+      },
+    },
+  ],
 };

@@ -1,6 +1,6 @@
 {
   "name": "@jameslnewell/eslint-config",
-  "version": "0.13.4",
+  "version": "0.13.5",
   "files": [
     "index.js",
     "react.js",

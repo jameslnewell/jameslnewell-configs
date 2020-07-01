@@ -1,5 +1,4 @@
 const { getPackagesSync } = require("@manypkg/get-packages");
-
 const {root, packages} = getPackagesSync(process.cwd());
 
 module.exports = {
@@ -7,7 +6,7 @@ module.exports = {
     `${root.dir}/(src|test)/**/*.test?(s).ts?(x)`,
     ...packages.map(workspace => `${workspace.dir}/(src|test)/**/*.test?(s).ts?(x)`),
   ],
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': require.resolve('babel-jest'),
   },

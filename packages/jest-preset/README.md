@@ -1,11 +1,11 @@
-# @jameslnewell/jest-preset-test
+# @jameslnewell/jest-preset
 
 A test preset for my personal projects that use `jest`.
 
 ## Installation
 
 ```
-yarn add --dev @babel/core @jameslnewell/jest-preset-test
+yarn add --dev @babel/core @jameslnewell/jest-preset
 ```
 
 ## Usage
@@ -14,10 +14,7 @@ yarn add --dev @babel/core @jameslnewell/jest-preset-test
 
 ```
 {
-  projects: [
-    displayName: 'test',
-    preset: '@jameslnewell/jest-preset-test'
-  ]
+  preset: '@jameslnewell/jest-preset'
 }
 ```
 

@@ -10,7 +10,7 @@ yarn add --dev @jameslnewell/prettier-config
 
 ## Usage
 
-`prettier.config.js`
+`.prettierrc.js`
 
 ```js
 module.exports = require('@jameslnewell/prettier-config');

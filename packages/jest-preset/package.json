@@ -1,12 +1,13 @@
 {
   "name": "@jameslnewell/jest-preset-test",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "repository": "jameslnewell/configs",
   "dependencies": {
-    "babel-jest": "^24.9.0"
+    "@manypkg/get-packages": "^1.1.0",
+    "babel-jest": "^26.1.0"
   },
   "peerDependencies": {
-    "jest": "^24.9.0"
+    "jest": ">=26.1.0"
   },
   "license": "MIT"
 }

@@ -28,7 +28,10 @@ module.exports = {
     // note you must disable the base rule as it can report incorrect errors
     // @see https://github.com/bradzacher/eslint-plugin-typescript/blob/master/docs/rules/no-unused-vars.md#options
     'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': ['error'],
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {argsIgnorePattern: '^_unused_'},
+    ],
 
     // infer return types where it makes sense
     '@typescript-eslint/explicit-function-return-type': [

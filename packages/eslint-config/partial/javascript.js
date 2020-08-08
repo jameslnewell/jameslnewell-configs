@@ -14,4 +14,7 @@ module.exports = {
     'plugin:import/errors',
     'plugin:import/warnings',
   ],
+  rules: {
+    'no-unused-vars': ['error', {argsIgnorePattern: '^_unused_'}],
+  },
 };

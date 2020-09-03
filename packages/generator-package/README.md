@@ -1,6 +1,6 @@
 # @jameslnewell/generator-package 
 
-Generate a new npm package.
+Generate a new NPM package.
 
 ## Installation
 
@@ -11,5 +11,5 @@ yarn global add yo @jameslnewell/generator-package
 ## Usage
 
 ```bash
-yo @jameslnewell/package
+yo @jameslnewell/package [dir]
 ```

@@ -40,7 +40,7 @@ export const manifest: base['manifest'] = (options) => {
     scripts: {
       format: 'prettier --write .',
       lint: 'eslint --fix',
-      'type': 'tsc',
+      type: 'tsc',
       test: 'jest'
     },
     license: 'MIT'

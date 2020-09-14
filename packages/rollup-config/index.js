@@ -11,7 +11,7 @@ const resolvePromise = promisify(resolve);
 module.exports = async () => {
 
   // read the package.json
-  const {pkg} = await readPkgUp();
+  const {packageJson: pkg} = await readPkgUp();
   if (!pkg) {
     throw new Error('package.json not found');
   }

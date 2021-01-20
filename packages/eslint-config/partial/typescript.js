@@ -42,6 +42,9 @@ module.exports = {
         allowHigherOrderFunctions: true,
       },
     ],
+
+    // prefer interfaces for declaration merging
+    '@typescript-eslint/no-empty-interface': ['off'],
   },
   // settings: {
   //   'import/resolver': {

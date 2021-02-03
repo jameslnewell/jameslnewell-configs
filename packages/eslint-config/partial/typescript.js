@@ -45,6 +45,8 @@ module.exports = {
 
     // prefer interfaces for declaration merging
     '@typescript-eslint/no-empty-interface': ['off'],
+    // prefer declarative types
+    '@typescript-eslint/no-inferrable-types': ['off'],
   },
   // settings: {
   //   'import/resolver': {
